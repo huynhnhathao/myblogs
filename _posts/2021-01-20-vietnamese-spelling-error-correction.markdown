@@ -115,7 +115,7 @@ Mình chỉ cần huấn luyện detector, vì corrector đã được huấn lu
 
 Vì tiếng Việt chưa có dữ liệu được gán nhãn và public cho bài sửa lỗi chính tả nên toàn bộ dữ liệu training và dev đều được tạo từ một hàm synthesized function. Dữ liệu được tạo bởi hàm này có thể không thể hiện tốt được phân phối của dữ liệu trong thực tế, nhưng mình đã cố gắng tạo hàm synthesized function sao cho nó tạo ra những lỗi mà người viết hay gặp nhất, như lỗi từ đồng âm, lỗi đánh máy, từ viết tắt, teencode,...
 
-### Kết luận
+## Kết luận
 
 Trong bài này, mình đã mô tả mô hình Hard-Masked XLM-R để giải bài toán sửa lỗi chính tả cho tiếng Việt. Mô hình này dùng một detector là một mạng `Bi-LSTM` để tìm ra vị trí của từ sai, và đề xuất từ sửa lỗi bằng mô hình huấn luyện sẵn `XLMRobertaForMaskedLM`. Dữ liệu được sử dụng là dữ liệu tổng hợp từ một hàm synthesized function. Sau khi huấn luyện trên 2 triệu câu tiếng Việt, detector đạt được f1-score hơn 96%. Toàn bộ source code để chạy lại bài này đã được mình public tại [github][github_project_link].
 
