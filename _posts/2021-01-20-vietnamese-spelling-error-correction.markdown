@@ -56,7 +56,7 @@ Detector là một mạng Bidirectional LSTM,  output tại mỗi time step sẽ
 |:--:| 
 | *Detector là một Bi-LSTM* |
 
-Detector mình dùng LSTM có `num_layers = 2` , mỗi lớp có `hidden_size = 768`, lớp Embedding trước lớp LSTM có bộ từ vựng gồm 10000 từ, `embedding size = 512`, huấn luyện bằng training gồm 2 triệu câu, qua 2 epochs thì được `f1_score(average = 'micro') = 96.7%` trên tập dev gồm 20 000 câu.
+Detector mình dùng LSTM có `num_layers = 2` , mỗi lớp có `hidden_size = 768`, lớp Embedding trước lớp LSTM có bộ từ vựng gồm 10000 từ, `embedding size = 512`, huấn luyện bằng tập training gồm 2 triệu câu, qua 2 epochs thì được `f1_score(average = 'micro') = 96.7%` trên tập dev gồm 20 000 câu.
 
 Định nghĩa Detector bằng pytorch:
 
