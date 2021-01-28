@@ -109,7 +109,53 @@ Corrector của Hard-Masked XLM-R là mô hình pretrained [`XLMRobertaForMasked
 
 Tuy nhiên, mô hình `XLMRobertaForMaskedLM` không đảm bảo sẽ cho ra từ chính xác như từ mà mình mong muốn, mà sẽ là bất cứ từ nào nó cho là hợp lý khi thay vào `<mask>`. Như câu trên, `XLMRobertaForMaskedLM` rất có thể sẽ cho ra bất cứ con nào có 4 chân như chó, gấu,... vì không có gì ràng buộc nó để phải output ra con mèo. Để tìm ra từ mong muốn, mình có thể thêm một hàm đo khoảng cách edit distance để tìm ra từ được đề xuất bởi `XLMRobertaForMaskedLM` gần với từ bị sai chính tả nhất, bằng cách này mình sẽ có khả năng cao tìm được từ đúng của từ sai chính tả ban đầu.
 
+Để load mô hình pretrained `XLMRobertaForMaskedLM` chỉ cần vài dòng:
+
+    !pip install transformers
+    from transformers import  XLMRobertaForMaskedLM
+    MaskedLM = XLMRobertaForMaskedLM.from_pretrained('xlm-roberta-base')
+
+MaskedLM lúc này đã có thể sử dụng được. Nó nhận vào một câu input có token `<mask>` và trả về câu đã thay thế token `<mask>` bằng từ khác như ví dụ ở trên.
+
 Nói một chút về [XLM-RoBERTa][xlmr], do Facebook phát triển, là một mô hình ngôn ngữ đã được huấn luyện trên 100 ngôn ngữ, trong đó có tiếng Việt. Mình có thể xem mô hình ngôn ngữ này như một mô hình embedding, vì nó chuyển các token thành các vector số để đại diện cho token đó. Trong xử lý ngôn ngữ tự nhiên, việc tìm một vector đại diện cho một từ trong ngôn ngữ để máy có thể hiểu và xử lý được là rất quan trọng. Nếu vector đại diện đó tốt, thể hiện được ý nghĩa của từ mà nó đại diện cho thì mô hình học máy phía sau sẽ cho kết quả tốt hơn. Các mô hình ngôn ngữ có hỗ trợ tiếng Việt phải kể đển PhoBERT, XLM-RoBERTa, BERT-multilingual. Nhưng trong đó XLM-R được huấn luyện trên nhiều dữ liệu tiếng Việt nhất (khoảng 137GB tiếng Việt), nên XLM-R rất có giá trị cho các bài toán xử lý ngôn ngữ tự nhiên cho tiếng Việt.
+
+### Kết hợp Detector và Corrector để tạo thành Hard-Masked XLM-R
+
+Sau khi đã huấn luyện detector và load corrector, mình sẽ định nghĩa mô hình Hard-Masked XLM-R kết hợp cả detector và corector. 
+
+    class HardMasked(nn.Module):
+        def __init__(self, detector, MaskedLM, detector_tokenizer, maskedlm_tokenzier,device ):
+            super(HardMasked, self).__init__()
+            self.detector = detector.to(device)
+            self.MaskedLM = MaskedLM.to(device)
+            self.detector_tokenizer = detector_tokenizer
+            self.maskedlm_tokenizer = maskedlm_tokenizer
+            self.use_device = device
+
+        def forward(self, s):
+            maskedlm_features = self.prepare_input(s)
+            outputs = MaskedLM(input_ids = torch.tensor([maskedlm_features['input_ids']], dtype = torch.long, device = self.use_device), 
+                                attention_mask = torch.tensor([maskedlm_features['attention_mask']], dtype = torch.long, device = self.use_device) )
+            logits = outputs['logits'][0]
+            output_ids = torch.argmax(logits, dim = -1)
+            final_output = maskedlm_tokenizer.decode(output_ids)
+            return final_output
+
+        def prepare_input(self, s):
+            detector_input_ids = self.detector_tokenizer.encode(s, out_type = int)
+            detector_input_pieces = self.detector_tokenizer.id_to_piece(detector_input_ids)
+            detector_outputs = (self.detector(torch.tensor([detector_input_ids], dtype = torch.long, device = self.use_device))[0].reshape(1,-1) > 0.5).int()[0] 
+            for i in range(1, len(detector_input_pieces)):
+                if detector_outputs[i] == 1:
+                    detector_input_pieces[i] = ' <mask>'
+            masked_s = self.detector_tokenizer.decode(detector_input_pieces)
+            for i in range(5):
+                masked_s = re.sub(r'<mask>\s<mask>', '<mask>', masked_s)
+            maskedlm_features = maskedlm_tokenizer(masked_s)
+            return maskedlm_features
+
+
+Mô hình trên nhận vào detector và corrector đã được huấn luyện,  tokenizer của detector (Sentencepiece tokenizer), tokenizer của XLM-R (tokenizer của mô hình `XLMRobertaForMaskedLM`, đã được huấn luyện sẵn chỉ cần tải về), mô hình nhận vào 1 câu tiếng Việt và trả về câu đó với các từ sai chính tả đã được thay thế bởi từ mà mô hình cho là hợp lý.
 
 ### Tạo dữ liệu training
 
