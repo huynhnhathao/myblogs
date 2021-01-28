@@ -56,6 +56,8 @@ Detector là một mạng Bidirectional LSTM,  output tại mỗi time step sẽ
 |:--:| 
 | *Detector là một Bi-LSTM* |
 
+Detector mình dùng LSTM có `num_layers = 2` , mỗi lớp có `hidden_size = 768`, lớp Embedding trước lớp LSTM có bộ từ vựng gồm 10000 từ, `embedding size = 512`, huấn luyện bằng training gồm 2 triệu câu, qua 2 epochs thì được `f1_score(average = 'micro') = 96.7%` trên tập dev gồm 20 000 câu.
+
 Định nghĩa Detector bằng pytorch:
 
     class Detector(nn.Module):
@@ -108,6 +110,24 @@ Corrector của Hard-Masked XLM-R là mô hình pretrained [`XLMRobertaForMasked
 Tuy nhiên, mô hình `XLMRobertaForMaskedLM` không đảm bảo sẽ cho ra từ chính xác như từ mà mình mong muốn, mà sẽ là bất cứ từ nào nó cho là hợp lý khi thay vào `<mask>`. Như câu trên, `XLMRobertaForMaskedLM` rất có thể sẽ cho ra bất cứ con nào có 4 chân như chó, gấu,... vì không có gì ràng buộc nó để phải output ra con mèo. Để tìm ra từ mong muốn, mình có thể thêm một hàm đo khoảng cách edit distance để tìm ra từ được đề xuất bởi `XLMRobertaForMaskedLM` gần với từ bị sai chính tả nhất, bằng cách này mình sẽ có khả năng cao tìm được từ đúng của từ sai chính tả ban đầu.
 
 Nói một chút về [XLM-RoBERTa][xlmr], do Facebook phát triển, là một mô hình ngôn ngữ đã được huấn luyện trên 100 ngôn ngữ, trong đó có tiếng Việt. Mình có thể xem mô hình ngôn ngữ này như một mô hình embedding, vì nó chuyển các token thành các vector số để đại diện cho token đó. Trong xử lý ngôn ngữ tự nhiên, việc tìm một vector đại diện cho một từ trong ngôn ngữ để máy có thể hiểu và xử lý được là rất quan trọng. Nếu vector đại diện đó tốt, thể hiện được ý nghĩa của từ mà nó đại diện cho thì mô hình học máy phía sau sẽ cho kết quả tốt hơn. Các mô hình ngôn ngữ có hỗ trợ tiếng Việt phải kể đển PhoBERT, XLM-RoBERTa, BERT-multilingual. Nhưng trong đó XLM-R được huấn luyện trên nhiều dữ liệu tiếng Việt nhất (khoảng 137GB tiếng Việt), nên XLM-R rất có giá trị cho các bài toán xử lý ngôn ngữ tự nhiên cho tiếng Việt.
+
+### Tạo dữ liệu training
+
+Vì Tiếng Việt vẫn chưa có dữ liệu benchmark cho bài toán này, nên mình phải tạo dữ liệu train và test bằng một hàm tổng hợp. Hàm này sẽ nhận vào một câu tiếng Việt, tạo ra một câu mới có lỗi sai chính tả dựa vào câu input. Các lỗi sai chính tả được tạo dựa vào các lỗi sai thường gặp như nhầm lẫn giữa các từ đồng âm, lỗi đánh máy, lỗi từ không phù hợp ngữ cảnh,...
+
+|Từ gốc     |Tạo từ sai chính tả     
+|Xử lý      |**Sử** lý/**Su** lý     
+|Sửa xe     |**Sữa** xe/**Suawx** xe     
+|Năm tháng  |**Lăm** tháng/**Namwx** tháng
+
+Bảng trên là một vài ví dụ về cách tạo từ sai chính tả. Câu input sẽ đi qua các bước sau:
+1. Dùng word tokenizer của nltk để chia câu thành các token.
+2. Tính số lượng token sai chính tả cần tạo dựa vào số token của câu input.
+3. Tìm ra tất cả các token candidate có thể tạo từ sai trong câu input, và chọn ngẫu nhiên số lượng token candidate như đã tính.
+4. Sửa các token candidate thành sai chính tả, lưu lại vị trí của token trong câu.
+5. Trả về 3 chuỗi: câu input, one hot label chỉ vị trí của từ sai chính tả, câu vừa tạo.
+
+Như vậy, câu input sẽ được giả sử là chỉ chứa các từ đúng chính tả.
 
 ### Huấn luyện mô hình
 
