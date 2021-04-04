@@ -17,7 +17,7 @@ Toán luôn làm người học thấy chán nản không những vì nó khó, 
 
 * Sách [Introduction to Linear Algebra][GS_book], Fifth Edition (2016) , cũng của Gilbert Strang
 
-* Hoặc khóa học MIT 18.065 Matrix [Methods in Data Analysis, Signal Processing, and Machine Learning, Spring 2018, Gilbert Strang][GS_LinearAlgebra2]
+* Hoặc khóa học MIT 18.065 [Matrix Methods in Data Analysis, Signal Processing, and Machine Learning, Spring 2018, Gilbert Strang][GS_LinearAlgebra2]
 
 ### 2. Xác xuất thống kê
 
