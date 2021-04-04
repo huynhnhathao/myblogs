@@ -13,17 +13,17 @@ Toán luôn làm người học thấy chán nản không những vì nó khó, 
 
 ### 1. Đại số tuyến tính
 
-| ![HardMaskedXLMR.png](https://raw.githubusercontent.com/huynhnhathao/myblogs/main/images/vietnamese_spelling_error_correction/hardmasked.png) | 
-|:--:| 
-| *Hard-Masked XLM-R* |
 
 * Khóa học linear algebra của Gilbert Strang, MIT trên [youtube][GS_LinearAlgebra]
+
 * Sách [Introduction to Linear Algebra][GS_book], Fifth Edition (2016) , cũng của Gilbert Strang
+
 * Hoặc khóa học MIT 18.065 Matrix [Methods in Data Analysis, Signal Processing, and Machine Learning, Spring 2018, Gilbert Strang][GS_LinearAlgebra2]
 
 ### 2. Xác xuất thống kê
 
 * Khóa học Statistics 110: [Probability, Joe Blitzstein, Havard University][Probablity_course]
+
 * Cùng với quyển sách đồng hành rất hay với khóa học: [Introduction to Probability by Joe Blitzstein and Jessica Hwang][Probability_book]
 
 ## 2. Machine Learning
