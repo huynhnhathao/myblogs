@@ -92,7 +92,7 @@ Bạn nào muốn tìm hiểu về reinforcement learning có thể tham khảo 
 
 * Khóa học DRL trên youtube: [CS294-112 Deep Reinforcement Learning Sp17 - YouTube][drl_youtube]
 
-
+Các quyển sách trên không có link pdf mà phải mua trên Amazone. Các bạn sinh viên phải tôn trọng bản quyền sách và không dùng sách lậu từ các trang web như book4you dot org, vì trang web này chứa rất nhiều sách hay miễn phí, hầu hết các quyển sách giới thiệu bên trên đều có trong trang này. 
 
 
 ## Kết luận
