@@ -110,7 +110,7 @@ Mình sẽ cập nhật các tài liệu mà mình biết vào bài viết này,
 [GS_book]: https://math.mit.edu/~gs/linearalgebra/
 [GS_LinearAlgebra2]: https://www.youtube.com/playlist?app=desktop&list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k
 [Probability_course]: https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo
-[Probablity_course]: https://projects.iq.harvard.edu/stat110/home
+[Probability_book]: https://projects.iq.harvard.edu/stat110/home
 [ml_coban]: https://machinelearningcoban.com/
 [ml_coursera]: https://www.coursera.org/learn/machine-learning?utm_source=gg&utm_medium=sem&utm_campaign=07-StanfordML-ROW&utm_content=07-StanfordML-ROW&campaignid=2070742271&adgroupid=80109820241&device=c&keyword=machine%20learning%20mooc&matchtype=b&network=g&devicemodel=&adpostion=&creativeid=369041663186&hide_mobile_promo&gclid=CjwKCAjwpKCDBhBPEiwAFgBzj1iCJwBA1rcJCawcZUpGrpzUHn7Ol53V-rzLP9anDsk43w8EL8cTxxoCsMQQAvD_BwE
 [ml_youtube]: https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU
