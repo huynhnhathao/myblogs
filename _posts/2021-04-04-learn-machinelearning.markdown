@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tài liệu học Machine Learning"
-date:   2021-01-20 21:24:58 +0700
+date:   2021-04-04 2:00:00 +0700
 # category: projects
 image: https://raw.githubusercontent.com/huynhnhathao/myblogs/main/images/vietnamese_spelling_error_correction/time_treasure.png
 ---
@@ -29,6 +29,7 @@ Toán luôn làm người học thấy chán nản không những vì nó khó, 
 ## 2. Machine Learning
 
 ### 1. Machine learning cơ bản
+
 #### Tài liệu Tiếng Việt
 
 Quyển đầu tiên về machine learning nhất định phải đọc là `machine learning cơ bản` của anh Vũ Hữu Tiệp, cùng với trang web [Machine learning cơ bản][ml_coban] có rất nhiều thông tin quý giá về machine learning. Bạn đọc không nên bỏ qua nguồn tài liệu quý giá này.
@@ -39,6 +40,7 @@ Quyển đầu tiên về machine learning nhất định phải đọc là `mac
 Các bạn nào có thể đọc tiếng anh thì mình giới thiệu 2 quyển:
 
 *	An Introduction to Statistical Learning: With Applications in R (ISRL), Daniela Witten, Trevor Hastie, Gareth M. James, Robert Tibshirani
+
 *	The Elements of Statistical Learning(ESL), Book by Jerome H. Friedman, Robert Tibshirani, and Trevor Hastie
 
 Quyển ISLR giới thiệu về các thuật toán machine learning cũng như quyển ESL, tuy nhiên ISLR giới thiệu một cách nhẹ nhàng, ít các phương trình toán học hơn, nên sẽ dễ đọc hơn. Mình khuyên các bạn nào mới học nên đọc quyển ISLR trước, sau đó nếu muốn tìm hiểu sâu hơn thì đọc quyển ESL. Cả 2 quyển sách đều rất hay.
@@ -60,15 +62,19 @@ Hoặc các bạn có thể học khóa machine learning CS229 trên youtube, c�
 
 Nhắc lại là các bạn có thể học miễn phí các khóa này.
 Tiếp theo là các khóa học trên youtube của Stanford University: 
+
 *	CS230: [Deep Learning | Autumn 2018 - YouTube][dl_youtube], rất tuyệt vời
+
 *	CS224N: [Natural Language Processing with Deep Learning - YouTube][nlp_youtube], dành cho bạn nào muốn học NLP, tuyệt vời không kém
+
 *	[Lecture Collection | Convolutional Neural Networks for Visual Recognition (Spring 2017) - YouTube][cv_youtube], cho bạn nào muốn học CV
 
 Ngoài ra, một số quyển sách nói sâu về Deep learning:
 
 *	[Deep Learning, Book by Aaron Courville, Ian Goodfellow, and Yoshua Bengio][dl_book]. Quyển này sẽ hơi khó đọc với các bạn mới học.
+
 *	[Deep Learning with Python, Book by François Chollet][dl_keras]. Quyển này dễ đọc, nói về keras, một thư viện deep learning thân thiện với người mới.
-* 
+
 
 Các thư viện deep learning như Pytorch, Keras, Tensorflow có nhiều bài viết tutorials trên trang chính, các bạn có thể lên đó tham khảo.
 Reinforcement learning
@@ -76,10 +82,15 @@ Reinforcement learning
 Bạn nào muốn tìm hiểu về reinforcement learning có thể tham khảo các nguồn tài liệu sau:
 
 *	Reinforcement Learning: An Introduction, Book by Andrew Barto and Richard S. Sutton
+
 *	Reinforcement Learning Specialization, [Reinforcement Learning | Coursera][rl_coursera]
+
 *	Foundations of Deep Reinforcement Learning: Theory and Practice in Python, Book by Laura Graesser and Wah Loon Keng
+
 *	Khóa học RL trên youtube: [Introduction to reinforcement learning - YouTube, David Silver][rl_silver]
+
 *	Khóa học DRL trên youtube: [CS294-112 Deep Reinforcement Learning Sp17 - YouTube][drl_youtube]
+
 *   Một quyển rất hay và chi tiết về NLP: [Speech and language processing][slp_book]
 
 
