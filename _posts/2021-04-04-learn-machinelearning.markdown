@@ -50,7 +50,7 @@ Sau khi biết được các khái niệm cơ bản về thống kê và các th
 
 Quyển này có rất nhiều code bằng python, thiên về hướng `practical` hơn 2 quyển trước. Các bạn có thể tìm hiểu cách code trong quyển này và bắt chước theo. Đây là một quyển rất hay, không thể bỏ qua.
 
-* Ngoài ra còn có khóa học machine learning trên Coursera, do Prof. Andrew Ng., đại học Standford dạy. Các bạn có thể học thoải mái không tốn tiền trên Coursera nên đừng ngại lên đó tìm khóa học mà mình muốn. [Machine Learning | Coursera][ml_coursera]
+* Ngoài ra còn có khóa học machine learning trên Coursera, do Prof. Andrew Ng., đại học Standford dạy. Các bạn có thể học thoải mái không tốn tiền trên Coursera nên đừng ngại lên đó tìm khóa học mà mình muốn. [Machine Learning, Coursera][ml_coursera]
 
 Nếu các bạn muốn có giấy chứng nhận sau khi hoàn thành khóa học mà không có tiền để trả phí, thì có thể đăng ký Financial Aid của Coursera. Mình đảm bảo sẽ được chấp nhận nếu bạn tự viết application, không copy trên mạng, và một khi đã được chấp nhận thì phải hoàn thành khóa học đã đăng ký.
 
@@ -58,16 +58,16 @@ Nếu các bạn muốn có giấy chứng nhận sau khi hoàn thành khóa h�
 
 *Deep learning*
 
-Đối với deep learning, các khóa đầu tiên mình giới thiệu các bạn nên học là 5 khóa deep learning của Coursera [Deep Learning | Coursera][dl_coursera]
+Đối với deep learning, các khóa đầu tiên mình giới thiệu các bạn nên học là 5 khóa deep learning của Coursera [Deep Learning  Coursera][dl_coursera]
 
 Nhắc lại là các bạn có thể học miễn phí các khóa này.
 Tiếp theo là các khóa học trên youtube của Stanford University
 
-* CS230: [Deep Learning | Autumn 2018 - YouTube][dl_youtube], rất tuyệt vời
+* CS230: [Deep Learning  Autumn 2018 - YouTube][dl_youtube], rất tuyệt vời
 
 * CS224N: [Natural Language Processing with Deep Learning - YouTube][nlp_youtube], dành cho bạn nào muốn học NLP, tuyệt vời không kém
 
-* [Lecture Collection | Convolutional Neural Networks for Visual Recognition (Spring 2017) - YouTube][cv_youtube], cho bạn nào muốn học CV
+* [Lecture Collection  Convolutional Neural Networks for Visual Recognition (Spring 2017) - YouTube][cv_youtube], cho bạn nào muốn học CV
 
 Ngoài ra, một số quyển sách nói sâu về Deep learning:
 
@@ -83,7 +83,7 @@ Bạn nào muốn tìm hiểu về reinforcement learning có thể tham khảo 
 
 * Reinforcement Learning: An Introduction, Book by Andrew Barto and Richard S. Sutton
 
-* Reinforcement Learning Specialization, [Reinforcement Learning | Coursera][rl_coursera]
+* Reinforcement Learning Specialization, [Reinforcement Learning Coursera][rl_coursera]
 
 * Foundations of Deep Reinforcement Learning: Theory and Practice in Python, Book by Laura Graesser and Wah Loon Keng
 
@@ -109,7 +109,7 @@ Mình sẽ cập nhật các tài liệu mà mình biết vào bài viết này,
 [GS_book]: https://math.mit.edu/~gs/linearalgebra/
 [GS_LinearAlgebra2]: https://www.youtube.com/playlist?app=desktop&list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k
 [Probability_course]: https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo
-[Probability_book]: https://projects.iq.harvard.edu/stat110/home
+[Probablity_course]: https://projects.iq.harvard.edu/stat110/home
 [ml_coban]: https://machinelearningcoban.com/
 [ml_coursera]: https://www.coursera.org/learn/machine-learning?utm_source=gg&utm_medium=sem&utm_campaign=07-StanfordML-ROW&utm_content=07-StanfordML-ROW&campaignid=2070742271&adgroupid=80109820241&device=c&keyword=machine%20learning%20mooc&matchtype=b&network=g&devicemodel=&adpostion=&creativeid=369041663186&hide_mobile_promo&gclid=CjwKCAjwpKCDBhBPEiwAFgBzj1iCJwBA1rcJCawcZUpGrpzUHn7Ol53V-rzLP9anDsk43w8EL8cTxxoCsMQQAvD_BwE
 [ml_youtube]: https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU
