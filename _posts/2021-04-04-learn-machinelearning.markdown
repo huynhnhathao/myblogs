@@ -75,6 +75,7 @@ Ngoài ra, một số quyển sách nói sâu về Deep learning:
 
 * [Deep Learning with Python, Book by François Chollet][dl_keras]. Quyển này dễ đọc, nói về keras, một thư viện deep learning thân thiện với người mới.
 
+* Một quyển rất hay và chi tiết về NLP: [Speech and language processing][slp_book]
 
 Các thư viện deep learning như Pytorch, Keras, Tensorflow có nhiều bài viết tutorials trên trang chính, các bạn có thể lên đó tham khảo.
 Reinforcement learning
@@ -91,7 +92,7 @@ Bạn nào muốn tìm hiểu về reinforcement learning có thể tham khảo 
 
 * Khóa học DRL trên youtube: [CS294-112 Deep Reinforcement Learning Sp17 - YouTube][drl_youtube]
 
-* Một quyển rất hay và chi tiết về NLP: [Speech and language processing][slp_book]
+
 
 
 ## Kết luận
