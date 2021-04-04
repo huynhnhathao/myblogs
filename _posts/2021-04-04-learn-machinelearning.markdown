@@ -3,7 +3,7 @@ layout: post
 title:  "Tài liệu học Machine Learning"
 date:   2021-04-04 2:00:00 +0700
 # category: projects
-image: https://raw.githubusercontent.com/huynhnhathao/myblogs/main/images/vietnamese_spelling_error_correction/time_treasure.png
+image: https://github.com/huynhnhathao/myblogs/blob/main/images/learn_machine_learning/time_treasure.png
 ---
 Chào các bạn, trong bài viết này mình sẽ giới thiệu về các tài liệu quý giá để học machine learning, deep learning mà mình đã tìm hiểu, chắt lọc. Con đường học machine learning là không dễ, cần rất nhiều cố gắng và nỗ lực. Tuy nhiên, những ai có đam mê, khao khát tri thức sẽ cảm thấy đây là một hành trình thú vị. Machine learning gồm rất nhiều lĩnh vực liên quan, như xác xuất, đại số tuyến tính, tối ưu hóa, thống kê,… mình sẽ chia sẽ tất cả các sách, khóa học, trang web, … mà mình biết.
 
