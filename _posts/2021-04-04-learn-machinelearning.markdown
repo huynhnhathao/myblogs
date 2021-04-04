@@ -13,7 +13,6 @@ Toán luôn làm người học thấy chán nản không những vì nó khó, 
 
 ### 1. Đại số tuyến tính
 
-
 * Khóa học linear algebra của Gilbert Strang, MIT trên [youtube][GS_LinearAlgebra]
 
 * Sách [Introduction to Linear Algebra][GS_book], Fifth Edition (2016) , cũng của Gilbert Strang
@@ -37,61 +36,62 @@ Quyển đầu tiên về machine learning nhất định phải đọc là `mac
 #### Tài liệu Tiếng Anh
 
 *Machine learning*
+
 Các bạn nào có thể đọc tiếng anh thì mình giới thiệu 2 quyển:
 
-*	An Introduction to Statistical Learning: With Applications in R (ISRL), Daniela Witten, Trevor Hastie, Gareth M. James, Robert Tibshirani
+* An Introduction to Statistical Learning: With Applications in R (ISRL), Daniela Witten, Trevor Hastie, Gareth M. James, Robert Tibshirani
 
-*	The Elements of Statistical Learning(ESL), Book by Jerome H. Friedman, Robert Tibshirani, and Trevor Hastie
+* The Elements of Statistical Learning(ESL), Book by Jerome H. Friedman, Robert Tibshirani, and Trevor Hastie
 
 Quyển ISLR giới thiệu về các thuật toán machine learning cũng như quyển ESL, tuy nhiên ISLR giới thiệu một cách nhẹ nhàng, ít các phương trình toán học hơn, nên sẽ dễ đọc hơn. Mình khuyên các bạn nào mới học nên đọc quyển ISLR trước, sau đó nếu muốn tìm hiểu sâu hơn thì đọc quyển ESL. Cả 2 quyển sách đều rất hay.
 
 Sau khi biết được các khái niệm cơ bản về thống kê và các thuật toán trong 2 quyển trên, mình xin giới thiệu quyển 
-*	Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems, Book by Aurelien Geron, second edition. 
+* Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems, Book by Aurelien Geron, second edition. 
 
 Quyển này có rất nhiều code bằng python, thiên về hướng `practical` hơn 2 quyển trước. Các bạn có thể tìm hiểu cách code trong quyển này và bắt chước theo. Đây là một quyển rất hay, không thể bỏ qua.
 
-Ngoài ra còn có khóa học machine learning trên Coursera, do Prof. Andrew Ng., đại học Standford dạy. Các bạn có thể học thoải mái không tốn tiền trên Coursera nên đừng ngại lên đó tìm khóa học mà mình muốn. [Machine Learning | Coursera][ml_coursera]
+* Ngoài ra còn có khóa học machine learning trên Coursera, do Prof. Andrew Ng., đại học Standford dạy. Các bạn có thể học thoải mái không tốn tiền trên Coursera nên đừng ngại lên đó tìm khóa học mà mình muốn. [Machine Learning | Coursera][ml_coursera]
 
 Nếu các bạn muốn có giấy chứng nhận sau khi hoàn thành khóa học mà không có tiền để trả phí, thì có thể đăng ký Financial Aid của Coursera. Mình đảm bảo sẽ được chấp nhận nếu bạn tự viết application, không copy trên mạng, và một khi đã được chấp nhận thì phải hoàn thành khóa học đã đăng ký.
 
-Hoặc các bạn có thể học khóa machine learning CS229 trên youtube, cũng của Andrew Ng., Chất lượng Stanford [Stanford CS229: Machine Learning | Autumn 2018 - YouTube][ml_youtube]
+* Hoặc các bạn có thể học khóa machine learning CS229 trên youtube, cũng của Andrew Ng., Chất lượng Stanford [Stanford CS229: Machine Learning | Autumn 2018 - YouTube][ml_youtube]
 
-* Deep learning
+*Deep learning*
 
 Đối với deep learning, các khóa đầu tiên mình giới thiệu các bạn nên học là 5 khóa deep learning của Coursera [Deep Learning | Coursera][dl_coursera]
 
 Nhắc lại là các bạn có thể học miễn phí các khóa này.
-Tiếp theo là các khóa học trên youtube của Stanford University: 
+Tiếp theo là các khóa học trên youtube của Stanford University
 
-*	CS230: [Deep Learning | Autumn 2018 - YouTube][dl_youtube], rất tuyệt vời
+* CS230: [Deep Learning | Autumn 2018 - YouTube][dl_youtube], rất tuyệt vời
 
-*	CS224N: [Natural Language Processing with Deep Learning - YouTube][nlp_youtube], dành cho bạn nào muốn học NLP, tuyệt vời không kém
+* CS224N: [Natural Language Processing with Deep Learning - YouTube][nlp_youtube], dành cho bạn nào muốn học NLP, tuyệt vời không kém
 
-*	[Lecture Collection | Convolutional Neural Networks for Visual Recognition (Spring 2017) - YouTube][cv_youtube], cho bạn nào muốn học CV
+* [Lecture Collection | Convolutional Neural Networks for Visual Recognition (Spring 2017) - YouTube][cv_youtube], cho bạn nào muốn học CV
 
 Ngoài ra, một số quyển sách nói sâu về Deep learning:
 
-*	[Deep Learning, Book by Aaron Courville, Ian Goodfellow, and Yoshua Bengio][dl_book]. Quyển này sẽ hơi khó đọc với các bạn mới học.
+* [Deep Learning, Book by Aaron Courville, Ian Goodfellow, and Yoshua Bengio][dl_book]. Quyển này sẽ hơi khó đọc với các bạn mới học.
 
-*	[Deep Learning with Python, Book by François Chollet][dl_keras]. Quyển này dễ đọc, nói về keras, một thư viện deep learning thân thiện với người mới.
+* [Deep Learning with Python, Book by François Chollet][dl_keras]. Quyển này dễ đọc, nói về keras, một thư viện deep learning thân thiện với người mới.
 
 
 Các thư viện deep learning như Pytorch, Keras, Tensorflow có nhiều bài viết tutorials trên trang chính, các bạn có thể lên đó tham khảo.
 Reinforcement learning
 
-Bạn nào muốn tìm hiểu về reinforcement learning có thể tham khảo các nguồn tài liệu sau:
+Bạn nào muốn tìm hiểu về reinforcement learning có thể tham khảo các nguồn tài liệu sau
 
-*	Reinforcement Learning: An Introduction, Book by Andrew Barto and Richard S. Sutton
+* Reinforcement Learning: An Introduction, Book by Andrew Barto and Richard S. Sutton
 
-*	Reinforcement Learning Specialization, [Reinforcement Learning | Coursera][rl_coursera]
+* Reinforcement Learning Specialization, [Reinforcement Learning | Coursera][rl_coursera]
 
-*	Foundations of Deep Reinforcement Learning: Theory and Practice in Python, Book by Laura Graesser and Wah Loon Keng
+* Foundations of Deep Reinforcement Learning: Theory and Practice in Python, Book by Laura Graesser and Wah Loon Keng
 
-*	Khóa học RL trên youtube: [Introduction to reinforcement learning - YouTube, David Silver][rl_silver]
+* Khóa học RL trên youtube: [Introduction to reinforcement learning - YouTube, David Silver][rl_silver]
 
-*	Khóa học DRL trên youtube: [CS294-112 Deep Reinforcement Learning Sp17 - YouTube][drl_youtube]
+* Khóa học DRL trên youtube: [CS294-112 Deep Reinforcement Learning Sp17 - YouTube][drl_youtube]
 
-*   Một quyển rất hay và chi tiết về NLP: [Speech and language processing][slp_book]
+* Một quyển rất hay và chi tiết về NLP: [Speech and language processing][slp_book]
 
 
 ## Kết luận
