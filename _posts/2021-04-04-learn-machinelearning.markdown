@@ -54,11 +54,11 @@ Quyển này có rất nhiều code bằng python, thiên về hướng `practic
 
 Nếu các bạn muốn có giấy chứng nhận sau khi hoàn thành khóa học mà không có tiền để trả phí, thì có thể đăng ký Financial Aid của Coursera. Mình đảm bảo sẽ được chấp nhận nếu bạn tự viết application, không copy trên mạng, và một khi đã được chấp nhận thì phải hoàn thành khóa học đã đăng ký.
 
-* Hoặc các bạn có thể học khóa machine learning CS229 trên youtube, cũng của Andrew Ng., Chất lượng Stanford [Stanford CS229: Machine Learning | Autumn 2018 - YouTube][ml_youtube]
+* Hoặc các bạn có thể học khóa machine learning CS229 trên youtube, cũng của Andrew Ng., Chất lượng Stanford [Stanford CS229: Machine Learning Autumn 2018 - YouTube][ml_youtube]
 
 *Deep learning*
 
-Đối với deep learning, các khóa đầu tiên mình giới thiệu các bạn nên học là 5 khóa deep learning của Coursera [Deep Learning  Coursera][dl_coursera]
+Đối với deep learning, các khóa đầu tiên mình giới thiệu các bạn nên học là 5 khóa deep learning của Coursera [Deep Learning - Coursera][dl_coursera]
 
 Nhắc lại là các bạn có thể học miễn phí các khóa này.
 Tiếp theo là các khóa học trên youtube của Stanford University
@@ -83,7 +83,7 @@ Bạn nào muốn tìm hiểu về reinforcement learning có thể tham khảo 
 
 * Reinforcement Learning: An Introduction, Book by Andrew Barto and Richard S. Sutton
 
-* Reinforcement Learning Specialization, [Reinforcement Learning Coursera][rl_coursera]
+* Reinforcement Learning Specialization, [Reinforcement Learning - Coursera][rl_coursera]
 
 * Foundations of Deep Reinforcement Learning: Theory and Practice in Python, Book by Laura Graesser and Wah Loon Keng
 
