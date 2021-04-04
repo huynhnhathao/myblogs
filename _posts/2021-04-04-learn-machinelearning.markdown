@@ -21,7 +21,7 @@ Toán luôn làm người học thấy chán nản không những vì nó khó, 
 
 ### 2. Xác xuất thống kê
 
-* Khóa học Statistics 110: [Probability, Joe Blitzstein, Havard University][Probablity_course]
+* Khóa học Statistics 110: [Probability, Joe Blitzstein, Havard University][Probability_course]
 
 * Cùng với quyển sách đồng hành rất hay với khóa học: [Introduction to Probability by Joe Blitzstein and Jessica Hwang][Probability_book]
 
