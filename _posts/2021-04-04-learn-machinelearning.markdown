@@ -78,7 +78,8 @@ Ngoài ra, một số quyển sách nói sâu về Deep learning:
 * Một quyển rất hay và chi tiết về NLP: [Speech and language processing][slp_book]
 
 Các thư viện deep learning như Pytorch, Keras, Tensorflow có nhiều bài viết tutorials trên trang chính, các bạn có thể lên đó tham khảo.
-Reinforcement learning
+
+*Reinforcement learning*
 
 Bạn nào muốn tìm hiểu về reinforcement learning có thể tham khảo các nguồn tài liệu sau
 
