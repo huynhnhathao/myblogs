@@ -43,22 +43,21 @@ Trong bài viết này, tôi sẽ giới thiệu một vài tài liệu học to
 
 * Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems, Book by Aurelien Geron, second edition. 
 
-* Ngoài ra còn có khóa học machine learning trên Coursera, do Prof. Andrew Ng., đại học Standford dạy. Các bạn có thể học thoải mái không tốn tiền trên Coursera nên đừng ngại lên đó tìm khóa học mà mình muốn. [Machine Learning, Coursera][ml_coursera]
+* [Machine Learning, Coursera][ml_coursera]
 
 
 *  [Stanford CS229: Machine Learning Autumn 2018 - YouTube][ml_youtube]
 
 *Deep learning*
 
-* [Deep Learning - Coursera][dl_coursera]
+* [Deep Learning - Coursera][dl_coursera].
 
-* CS230: [Deep Learning  Autumn 2018 - YouTube][dl_youtube], rất tuyệt vời
+* CS230: [Deep Learning  Autumn 2018 - YouTube][dl_youtube].
+* CS224N: [Natural Language Processing with Deep Learning - YouTube][nlp_youtube].
 
-* CS224N: [Natural Language Processing with Deep Learning - YouTube][nlp_youtube], dành cho bạn nào muốn học NLP, tuyệt vời không kém
+* [Lecture Collection  Convolutional Neural Networks for Visual Recognition (Spring 2017) - YouTube][cv_youtube].
 
-* [Lecture Collection  Convolutional Neural Networks for Visual Recognition (Spring 2017) - YouTube][cv_youtube], cho bạn nào muốn học CV
-
-* [Deep Learning, Book by Aaron Courville, Ian Goodfellow, and Yoshua Bengio][dl_book]. Quyển này sẽ hơi khó đọc với các bạn mới học.
+* [Deep Learning, Book by Aaron Courville, Ian Goodfellow, and Yoshua Bengio][dl_book]. 
 
 * [Deep Learning with Python, Book by François Chollet][dl_keras]. 
 
