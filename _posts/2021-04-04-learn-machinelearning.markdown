@@ -5,7 +5,7 @@ date:   2021-04-04 2:00:00 +0700
 # category: projects
 image: https://raw.githubusercontent.com/huynhnhathao/myblogs/main/images/learn_machine_learning/time_treasure.png
 ---
-Trong bài viết này, tôi sẽ giới thiệu một vài tài liệu học machine learning online mà tôi biết,
+Trong bài viết này, tôi sẽ giới thiệu một vài tài liệu học toán, machine learning, deep learning mà tôi biết.
 
 ## 1. Kiến thức nền tảng
 
