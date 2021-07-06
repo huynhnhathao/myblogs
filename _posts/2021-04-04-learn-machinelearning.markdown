@@ -5,7 +5,7 @@ date:   2021-04-04 2:00:00 +0700
 # category: projects
 image: https://raw.githubusercontent.com/huynhnhathao/myblogs/main/images/learn_machine_learning/time_treasure.png
 ---
-Trong bài viết này, tôi sẽ giới thiệu một vài tài liệu học toán, machine learning, deep learning mà tôi biết.
+Trong bài viết này, tôi sẽ giới thiệu một vài tài liệu học toán, machine learning, deep learning mà tôi biết. Tất cả những quyển sách trong bài này không có link có thể được tải tại [trang này](https://b-ok.asia/), đối với các bài báo khoa học không được public free có thể tải tại [trang này](https://sci-hub.se/). 
 
 ## 1. Kiến thức nền tảng
 
@@ -25,8 +25,6 @@ Trong bài viết này, tôi sẽ giới thiệu một vài tài liệu học to
 * Cùng với quyển sách đồng hành rất hay với khóa học: [Introduction to Probability by Joe Blitzstein and Jessica Hwang][Probability_book]
 
 ## 2. Machine Learning
-
-### 1. Machine learning cơ bản
 
 #### Tài liệu Tiếng Việt
 
